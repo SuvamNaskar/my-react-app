@@ -2,6 +2,7 @@ import Card from "./Card";
 import Student from "./Student";
 import UserGreeting from './UserGreeting'
 import List from "./List";
+import EventButton from "./EventButton";
 
 function App() {
 
@@ -38,11 +39,17 @@ function App() {
 		// </>
 	// );
 
+	// return ( //list rendering
+	// 	<>
+	// 		{fruits.length > 0 && <List items={fruits} title="Fruits" />}
+	// 		{vegetables.length > 0 && <List items={vegetables} title="Vegetables" /> }
+	// 		{oil.length > 0 && <List title="Oil" /> }
+	// 	</>
+	// );
+
 	return (
 		<>
-			{fruits.length > 0 && <List items={fruits} title="Fruits" />}
-			{vegetables.length > 0 && <List items={vegetables} title="Vegetables" /> }
-			{oil.length > 0 && <List title="Oil" /> }
+			<EventButton />
 		</>
 	);
 }
