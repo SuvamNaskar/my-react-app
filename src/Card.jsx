@@ -1,12 +1,16 @@
 import PropTypes from 'prop-types'
 import profilePic from "./assets/suvamnaskar.jpeg"
+import defaultProfilePic from "./assets/user-profile.jpg"
 import Button from "./Button/Button";
 
 function Card(props) {
 
+    let pic;
+    if (props.username === "suvamnaskar") pic = profilePic
+    else pic = defaultProfilePic
     return (
         <div className="card">
-            <img src={profilePic} alt="profile picture" className="card-img" />
+            <img src={pic} alt="profile picture" className="card-img" />
             <h2 className="card-title">{props.name}</h2>
             <p className="card-text">{props.about}</p>
             <Button username={props.username} />
