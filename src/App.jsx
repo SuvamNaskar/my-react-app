@@ -3,6 +3,7 @@ import Student from "./Student";
 import UserGreeting from './UserGreeting'
 import List from "./List";
 import EventButton from "./EventButton";
+import Counter from "./Counter.jsx";
 
 function App() {
 
@@ -47,9 +48,15 @@ function App() {
 	// 	</>
 	// );
 
-	return (
+	// return (	// Event Handling
+	// 	<>
+	// 		<EventButton />
+	// 	</>
+	// );
+
+	return (	// useState Hook
 		<>
-			<EventButton />
+			<Counter />
 		</>
 	);
 }
