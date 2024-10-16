@@ -4,6 +4,7 @@ import UserGreeting from './UserGreeting'
 import List from "./List";
 import EventButton from "./EventButton";
 import Counter from "./Counter.jsx";
+import Header from "./Header.jsx";
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
 
 	return (	// useState Hook
 		<>
+			<Header />
 			<Counter />
 		</>
 	);
