@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import style from './stylesheets/Counter.module.css';
 
 function Counter() {
     const [count, setCount] = useState(0);
@@ -15,7 +14,7 @@ function Counter() {
     const rst = () => {
         setCount(0);
     }
-    
+
     return (
         <>
             <h1>Counter</h1>
