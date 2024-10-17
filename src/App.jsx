@@ -5,6 +5,7 @@ import List from "./List";
 import EventButton from "./EventButton";
 import Counter from "./Counter.jsx";
 import Header from "./Header.jsx";
+import Input from "./Input.jsx";
 
 function App() {
 
@@ -59,6 +60,8 @@ function App() {
 		<>
 			<Header />
 			<Counter />
+			<br />
+			<Input />
 		</>
 	);
 }
